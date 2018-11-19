@@ -1,0 +1,32 @@
+{
+  "name": "lion-cli",
+  "version": "0.0.3",
+  "description": "简单的脚手架",
+  "bin": {
+    "scion": "bin/lion"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/FishLuo1992/my-cli.git"
+  },
+  "keywords": [
+    "cli",
+    "es6"
+  ],
+  "author": "18720090169@163.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/FishLuo1992/my-cli/issues"
+  },
+  "homepage": "hhttps://github.com/FishLuo1992/my-cli#readme",
+  "dependencies": {
+    "chalk": "^1.1.3",
+    "cli-table": "^0.3.1",
+    "commander": "^2.9.0",
+    "download-git-repo": "^1.0.0",
+    "handlebars": "^4.0.8",
+    "inquirer": "^3.0.6",
+    "metalsmith": "^2.3.0",
+    "ora": "^1.2.0"
+  }
+}
