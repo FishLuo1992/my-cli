@@ -1,17 +1,19 @@
 {
   "name": "lion-cli",
-  "version": "0.0.3",
-  "description": "简单的脚手架",
+  "version": "0.0.7",
+  "description": "lion的脚手架",
   "bin": {
-    "scion": "bin/lion"
+    "lion": "bin/lion"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/FishLuo1992/my-cli.git"
   },
   "keywords": [
+    "lion",
     "cli",
-    "es6"
+    "es6",
+    "node"
   ],
   "author": "18720090169@163.com",
   "license": "MIT",

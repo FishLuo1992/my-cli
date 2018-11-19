@@ -12,32 +12,32 @@ const question = [
   {
     type: 'input',
     name: 'name',
-    message: 'Template name:',
+    message: '需要clone的仓库内模板:',
     validate (val) {
       if (tplList[val]) {
         return true
       } else if (val === '') {
-        return 'Name is required!'
+        return '必须填模板名称!'
       } else if (!tplList[val]) {
-        return 'This template doesn\'t exists.'
+        return '仓库中没有此模板！'
       }
     }
   },
   {
     type: 'input',
     name: 'project',
-    message: 'Project name:',
+    message: '新建项目名称:',
     validate (val) {
       if (val !== '') {
         return true
       }
-      return 'Project name is required!'
+      return '必须有项目名称!'
     }
   },
   {
     type: 'input',
     name: 'place',
-    message: 'Where to init the project:',
+    message: '创建文件相对路径:',
     default: './'
   }
 ]
@@ -55,6 +55,6 @@ module.exports = prompt(question).then(({ name, project, place }) => {
       process.exit()
     }
     spinner.stop()
-    console.log(chalk.green('New project has been initialized successfully!'))
+    console.log(chalk.green('新建模板成功!'))
   })
 })

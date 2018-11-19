@@ -1,28 +1,24 @@
 
 
-# Installation
+# 下载(推荐使用淘宝镜像或yarn)
 ```
 npm install lion-cli -g
 ```
 or
 ```
-git clone https://github.com/FishLuo1992/my-cli.git
-
-install
+yarn golbal add lion-cli
 
 
-# Usage
-Open your terminal and type `lion-cli` or `lion-cli -h` , you'll see the help infomation below:
+# 使用
+输入 `lion` or `lion -h`查看脚手架命令, 可以看到:
 ```
-  Usage: lion-cli <command>
+  Usage: lion <command>
 
 
   Commands:
 
-    add|a      Add a new template
     list|l     List all the templates
     init|i     Generate a new project
-    delete|d   Delete a template
 
   Options:
 
@@ -30,77 +26,31 @@ Open your terminal and type `lion-cli` or `lion-cli -h` , you'll see the help in
     -V, --version  output the version number
 ```
 
-> Note that if you are using `MacOS`, `sudo` was required while using commands `add` and `delete`.
-
 # Commands
-### add | a
-This command would help you to add a new template to the `templates.json`, which will be used by `lion-cli` to generate projects.
-```
-$ lion-cli add
 
-? Set the custom name of the template: my-first-template
-? Owner/name of the template: FishLuo1992/my-cli
-? Branch of the template: new
-┌───────────────────┬────────────────┬────────┐
-│ Template Name     │ Owner/Name     │ Branch │
-├───────────────────┼────────────────┼────────┤
-│ my-first-template │ Fish../my-cli  │ new    │
-└───────────────────┴────────────────┴────────┘
-✔ New template has been added successfully!
-```
-`lion-cli` use [download-git-repo](https://github.com/flipxfx/download-git-repo) to down load git repos. After answering 3 questions, you'll add a new template to `lion-cli`.
+## 目前没开放add和delete的功能,需要的话,在./bin/lion取消注释
 
-### list | l
-It shows you the templates list.
+### list
+仓库中所有的模板
 ```
-$ lion-cli list
+$ lion list
+Owner/Name --> git 项目仓库的 name/templateName
 
-┌────────────────────┬────────────────┬────────┐
-│ Template Name      │ Owner/Name     │ Branch │
-├────────────────────┼────────────────┼────────┤
-│ my-first-template  │ Fish../my-cli  │ new    │
-├────────────────────┼────────────────┼────────┤
-│ my-second-template │ Fish../my-cli  │ master │
-└────────────────────┴────────────────┴────────┘
 ```
 
-### init | i
-After adding new templates, you could use this command to generate your own project by choosing template.
+### init
+clone模板生成自己的项目
 ```
-$ lion-cli init
+$ lion init
 
-? Template name: my-first-template
-? Project name: my-project
-? Where to init the project? ../
+? 需要clone的仓库内模板: my-first-template
+? 新建项目名称: my-project
+? 创建文件的相对路径? ../
 ⠹ Downloading template...
 
-New project has been initialized successfully!
+新建模板成功!
 ```
 
-It's easy, right?
-
-### delete | d
-To delete a template, you could use this command:
-```
-$ lion-cli delete
-
-? Which template you want to delete? my-second-template
-┌───────────────────┬────────────────┬────────┐
-│ Template Name     │ Owner/Name     │ Branch │
-├───────────────────┼────────────────┼────────┤
-│ my-first-template │ Fish../my-cli  │ new    │
-└───────────────────┴────────────────┴────────┘
-✔ Template has been deleted successfully
-```
-
-# Template
-The most important part of lion-cli is `template`. All templates' infomation were list in the `templates.json`.
-A template means a project sample, which has a simple or complex file structure.
-
-You can create your own templates repository, and push your templates in different branches. All you need to do then is to add the templates into  lion-cli's `templates.json`.
-
-# License
-MIT.
 
 
 
