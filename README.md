@@ -28,7 +28,15 @@ yarn golbal add lion-cli
 
 # Commands
 
-## 目前没开放add和delete的功能,需要的话,在./bin/lion取消注释
+### add
+添加模板
+```
+$ lion add
+
+### delete
+删除模板
+```
+$ lion delete
 
 ### list
 仓库中所有的模板

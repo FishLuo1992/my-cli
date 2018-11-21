@@ -1,13 +1,13 @@
 {
   "name": "lion-cli",
-  "version": "0.0.7",
+  "version": "0.1.3",
   "description": "lion的脚手架",
   "bin": {
     "lion": "bin/lion"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/FishLuo1992/my-cli.git"
+    "url": "https://github.com/FishLuo1992/my-cli"
   },
   "keywords": [
     "lion",
@@ -20,7 +20,7 @@
   "bugs": {
     "url": "https://github.com/FishLuo1992/my-cli/issues"
   },
-  "homepage": "hhttps://github.com/FishLuo1992/my-cli#readme",
+  "homepage": "https://github.com/FishLuo1992/my-cli#readme",
   "dependencies": {
     "chalk": "^1.1.3",
     "cli-table": "^0.3.1",

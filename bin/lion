@@ -14,13 +14,13 @@ program
 program
   .usage('<command>')
 
-// program
-//   .command('add')
-//   .description('Add a new template')
-//   .alias('a')
-//   .action(() => {
-//     require(res('add'))
-//   })
+program
+  .command('add')
+  .description('Add a new template')
+  .alias('a')
+  .action(() => {
+    require(res('add'))
+  })
 
 program
   .command('list')
@@ -38,21 +38,21 @@ program
     require(res('init'))
   })
 
-// program
-//   .command('delete')
-//   .description('Delete a template')
-//   .alias('d')
-//   .action(() => {
-//     require(res('delete'))
-//   })
+program
+  .command('delete')
+  .description('Delete a template')
+  .alias('d')
+  .action(() => {
+    require(res('delete'))
+  })
 
-// program
-//   .command('map')
-//   .description('Place files to diffirent position')
-//   .alias('m')
-//   .action(() => {
-//     require(res('map'))
-//   })
+program
+  .command('map')
+  .description('Place files to diffirent position')
+  .alias('m')
+  .action(() => {
+    require(res('map'))
+  })
 
 program.parse(process.argv)
 

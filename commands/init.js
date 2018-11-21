@@ -49,7 +49,7 @@ module.exports = prompt(question).then(({ name, project, place }) => {
 
   spinner.start()
 
-  download(`${gitPlace}#${gitBranch}`, `${place}/${project}`, (err) => {
+  download(`${gitPlace}#${gitBranch}`, `${place}/${project}`, { clone:true },(err) => {
     if (err) {
       console.log(chalk.red(err))
       process.exit()
