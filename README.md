@@ -10,9 +10,9 @@ yarn golbal add lion-cli
 
 
 # 使用
-输入 `lion` or `lion -h`查看脚手架命令, 可以看到:
+输入 `fish` or `fish -h`查看脚手架命令, 可以看到:
 ```
-  Usage: lion <command>
+  Usage: fish <command>
 
 
   Commands:
@@ -31,17 +31,17 @@ yarn golbal add lion-cli
 ### add
 添加模板
 ```
-$ lion add
+$ fish add
 
 ### delete
 删除模板
 ```
-$ lion delete
+$ fish delete
 
 ### list
 仓库中所有的模板
 ```
-$ lion list
+$ fish list
 Owner/Name --> git 项目仓库的 name/templateName
 
 ```
@@ -49,7 +49,7 @@ Owner/Name --> git 项目仓库的 name/templateName
 ### init
 clone模板生成自己的项目
 ```
-$ lion init
+$ fish init
 
 ? 需要clone的仓库内模板: my-first-template
 ? 新建项目名称: my-project

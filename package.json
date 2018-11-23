@@ -1,6 +1,6 @@
 ﻿{
   "name": "lion-cli",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "自己的脚手架",
   "bin": {
     "fish": "bin/lion"
